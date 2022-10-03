@@ -1,55 +1,89 @@
-body {
-    background-color: #FACFCF;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-.container{
-    width: 960px;
-    margin-left: 64px;
+body {
+  background-color: #facfcf;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  text-align: justify;
+}
+
+.container {
+  padding: 0px 80px;
 }
 header {
-    height: 100px;
-    border-top: 1px dotted red;
-    border-left: 1px dotted red;
-    border-right: 1px dotted red;
+  border-top: 2px dotted red;
+  border-left: 2px dotted red;
+  border-right: 2px dotted red;
+}
+header h1 {
+  padding: 10px 0;
 }
 header span {
-    color: white;
+  color: white;
 }
-header .menu-top{
-    background-color: #420000;
-    width: 90%;
+
+header .menu-top {
+  padding-right: 150px;
 }
-header .menu-top a{
-    padding-right: 100px;
-    text-decoration: none;
-    color: white;
+header .menu-top ul {
+  display: flex;
+  background-color: #420000;
+  list-style: none;
+  margin-bottom: 5px;
 }
+
+header .menu-top ul li {
+  padding: 10px 80px 10px 0px;
+  cursor: pointer;
+}
+
 section {
-    display: flex;
-    border: 1px dotted blue;
+  display: flex;
+  border: 2px dotted blue;
 }
+
 .menu-left {
-    width: 204px;
-    background-color: #9D6F68;
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
+  width: 220px;
+  background-color: #9d6f68;
 }
-.menu-left a {
-    text-decoration: none;
-    color: white;
-    padding: 15px 0;
+.menu-left ul {
+  list-style: none;
 }
+
+.menu-left ul li {
+  list-style: none;
+  padding: 15px 5px;
+}
+
 .content {
-    width: 756px;
+  flex: 1;
+  padding-left: 10px;
 }
 .content .text {
-    width: 90%;
+  padding-right: 150px;
 }
+.content .text h3 {
+  padding-top: 20px;
+}
+
+.content .text h4 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 footer {
-    text-align: center;
-    border-bottom: 1px dotted rgb(122, 122, 0);
-    border-right: 1px dotted rgb(122, 122, 0);
-    border-left: 1px dotted rgb(122, 122, 0);
-    padding: 40px;
-    color: white;
+  text-align: center;
+  border-bottom: 2px dotted rgb(122, 122, 0);
+  border-right: 2px dotted rgb(122, 122, 0);
+  border-left: 2px dotted rgb(122, 122, 0);
+  padding: 40px;
+  color: white;
 }
