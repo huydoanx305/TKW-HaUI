@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url("img.png");
+  padding: 20px 60px;
+}
+
+header h1 {
+  color: blue;
+}
+
+header h2 {
+  color: red;
+}
+
+.nav {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu > li > a,
+.sub-child > li > a {
+  display: block;
+  padding: 20px 40px;
+  color: #fff;
+}
+
+.menu > li:hover > a,
+.sub-child > li:hover > a {
+  background-color: coral;
+  color: black;
+}
+
+.menu .sub-nav {
+  position: relative;
+}
+
+.menu .sub-nav:hover .sub-child {
+  display: block;
+  background-color: cadetblue;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.sub-child {
+  display: none;
+}
+
+.nav .search {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+}
+.nav .search input {
+  width: 200px;
+  padding: 10px 15px;
+}
+
+section {
+  margin-top: 20px;
+}
+
+section h1 {
+  background-color: cadetblue;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+.filter .option {
+  display: flex;
+  margin-left: 15px;
+}
+
+.filter .option1 {
+  display: flex;
+}
+
+.filter .option2 {
+  display: flex;
+  margin-left: 30px;
+}
+
+.filter .xem {
+  flex: 0.1;
+  display: flex;
+  align-items: center;
+  grid-gap: 5px 5px;
+}
+
+.filter .xem .box-1 {
+  width: 30px;
+  height: 30px;
+  background-color: aqua;
+}
+
+.filter .xem .box-2 {
+  width: 30px;
+  height: 30px;
+  border: 2px solid aqua;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 15px;
+  margin-top: 20px;
+}
+
+.content .box {
+  width: 400px;
+  height: 450px;
+  border: 2px solid grey;
+}
+
+.content .box .image {
+  display: flex;
+  justify-content: center;
+}
+
+.content .box .image img {
+  width: 250px;
+  height: 300px;
+}
+
+.content .box h2,
+p {
+  text-align: center;
+}

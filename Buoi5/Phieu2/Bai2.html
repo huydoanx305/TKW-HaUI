@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai2 - Phieu2</title>
+  </head>
+  <body>
+    <button onlick="number(1)">1</button>
+    <button onclick="number(2)">2</button>
+    <button onclick="number(3)">3</button>
+    <button onclick="number(4)">4</button>
+    <button onclick="number(5)">5</button>
+    <button onclick="plus()">+</button>
+    <br />
+
+    <button onclick="number(6)">6</button>
+    <button onclick="number(7)">7</button>
+    <button onclick="number(8)">8</button>
+    <button onclick="number(9)">9</button>
+    <button onclick="number(0)">0</button>
+    <button onclick="result()">=</button>
+    <br />
+    <div style="margin-top: 10px">
+      <span style="color: blue">Kết quả: </span>
+      <span style="color: brown" id="result"></span>
+    </div>
+
+    <script>
+      let sum = 0;
+      let a = 0;
+      function number(x) {
+        a = x;
+      }
+      function plus() {
+        sum += a;
+      }
+      function result() {
+        let kq = document.getElementById("result");
+        kq.textContent = sum + a;
+        sum = 0;
+        a = 0;
+      }
+    </script>
+  </body>
+</html>

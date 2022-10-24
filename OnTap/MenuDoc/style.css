@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* dọc */
+.menu {
+  width: 250px;
+}
+
+.menu > li > a,
+.menu-con > li > a {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 20px 40px;
+}
+
+.menu > li:hover > a,
+.menu-con > li:hover > a {
+  background-color: cadetblue;
+  color: black;
+}
+
+.menu .menu-cha {
+  position: relative;
+}
+
+.menu .menu-cha:hover .menu-con {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.menu .menu-con {
+  display: none;
+}

@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ngang */
+.menu {
+  display: flex;
+}
+
+.menu > li > a,
+.menu-con > li > a {
+  display: block;
+  padding: 20px 40px;
+  background-color: black;
+  color: white;
+}
+
+.menu > li:hover > a,
+.menu-con > li:hover > a {
+  background-color: #ff3399;
+}
+
+.menu .menu-cha {
+  position: relative;
+}
+
+.menu .menu-cha:hover .menu-con {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+}
+
+.menu .menu-cha .menu-con {
+  display: none;
+}
